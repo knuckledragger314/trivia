@@ -3,7 +3,7 @@
 ## Overview
 Add support for longer, multiple-choice questions with detailed explanations alongside existing short-format trivia questions. New categories will display on the same category selection screen but route to a different question display experience.
 
-## Milestone 1: Directory and File Setup
+## Milestone 1: Directory and File Setup ✅ COMPLETED
 Create the directory structure and placeholder files for markdown content.
 
 **Expected Outcome:**
@@ -11,12 +11,12 @@ Create the directory structure and placeholder files for markdown content.
 - Empty markdown files `easy_aws_questions.md` and `easy_aws_answers.md` created
 - Files ready for you to add content
 
-## Milestone 1a: Edit Markdown Files
+## Milestone 1a: Edit Markdown Files ✅ COMPLETED
 - Remove the headers "IAM Quiz", etc from both files
 - Re-number them 1-x
 - Add a, b, c, etc to the options for each question
 
-## Milestone 2: Data Parsing and Map Creation
+## Milestone 2: Data Parsing and Map Creation ✅ COMPLETED
 Read the markdown files and convert content to Map structure similar to existing questions_and_answers.dart.
 
 **Expected Outcome:**
@@ -24,7 +24,7 @@ Read the markdown files and convert content to Map structure similar to existing
 - Markdown content parsed and organized into Map structure like existing system
 - Data accessible programmatically for use in app
 
-## Milestone 3: Add "Easy AWS" Category
+## Milestone 3: Add "Easy AWS" Category ✅ COMPLETED
 Create the new category and make it appear in the category selection grid.
 
 **Expected Outcome:**
@@ -32,7 +32,7 @@ Create the new category and make it appear in the category selection grid.
 - Category properly integrated into existing category system
 - Category selection works (even if it navigates to placeholder screen initially)
 
-## Milestone 4: Basic Navigation Screen
+## Milestone 4: Basic Navigation Screen ✅ COMPLETED
 Create a simple blank screen that can navigate back and forth between question and answer views.
 
 **Expected Outcome:**
@@ -42,7 +42,7 @@ Create a simple blank screen that can navigate back and forth between question a
 - Simple placeholder content to verify navigation works
 - Route properly connected from "Easy AWS" category selection
 
-## Milestone 5: UI Design and Content Integration
+## Milestone 5: UI Design and Content Integration ✅ COMPLETED
 Once basic navigation is working, figure out how to properly display the longer question content in the UI.
 
 **Expected Outcome:**
@@ -50,3 +50,13 @@ Once basic navigation is working, figure out how to properly display the longer 
 - Readable answer explanations with appropriate formatting
 - Good user experience for longer content
 - Integration with actual markdown content
+
+## Milestone 6: Add French AWS Questions
+Add French language AWS questions as a new category alongside existing ones.
+
+**Expected Outcome:**
+- Create `french_aws_questions.md` and `french_aws_answers.md` files
+- Parse French questions into new Dart file similar to existing AWS questions
+- Add "French AWS" category to category selection
+- French questions route to AWS question screen with proper content
+- Both English and French AWS categories work independently
