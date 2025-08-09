@@ -1,0 +1,2 @@
+/Users/charlieedelen/AndroidStudioProjects/trivia/android/app/.cxx/RelWithDebInfo/1n3h41y4/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/charlieedelen/AndroidStudioProjects/trivia/android/app/.cxx/RelWithDebInfo/1n3h41y4/armeabi-v7a/CMakeFiles/rebuild_cache.dir

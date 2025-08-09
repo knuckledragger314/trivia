@@ -1,0 +1,2 @@
+/Users/charlieedelen/AndroidStudioProjects/trivia/android/app/.cxx/Debug/2411244n/x86/CMakeFiles/edit_cache.dir
+/Users/charlieedelen/AndroidStudioProjects/trivia/android/app/.cxx/Debug/2411244n/x86/CMakeFiles/rebuild_cache.dir

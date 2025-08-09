@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-trivia-dev-ee896-authRole",
+      "UnauthRoleArn": "arn:aws:iam::526259456538:role/amplify-trivia-dev-ee896-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::526259456538:role/amplify-trivia-dev-ee896-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-trivia-dev-ee896-deployment",
+      "UnauthRoleName": "amplify-trivia-dev-ee896-unauthRole",
+      "StackName": "amplify-trivia-dev-ee896",
+      "StackId": "arn:aws:cloudformation:us-east-1:526259456538:stack/amplify-trivia-dev-ee896/57d25110-2e5e-11f0-8ccc-0ef9da84991d",
+      "AmplifyAppId": "d38bj3yaa1wwwg"
+    },
+    "categories": {
+      "auth": {
+        "triviaauth": {}
+      }
+    }
+  }
+}
