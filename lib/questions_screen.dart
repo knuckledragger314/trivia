@@ -1,10 +1,11 @@
 import 'dart:math';
 
-import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
+//import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:flutter/material.dart';
 import 'package:trivia/questions_and_answers.dart';
 import 'package:trivia/aws_questions_and_answers.dart';
-import 'package:amplify_flutter/amplify_flutter.dart';
+import 'package:trivia/french_aws_questions_and_answers.dart';
+//import 'package:amplify_flutter/amplify_flutter.dart';
 import 'amplify_configuration.dart';
 
 // void main() {
@@ -68,27 +69,27 @@ class _CategoryTriviaTapPageState extends State<CategoryTriviaTapPage> {
   bool showAnswer = true;
   String question = '';
   String answer = 'Tap for your next question!';
-  bool _amplifyConfigured = false;
+  //bool _amplifyConfigured = false;
 
   @override
   void initState() {
     super.initState();
     //AmplifyService.configureAmplify();
-     _configureAmplify();
+     //_configureAmplify();
   }
 
-  Future<void> _configureAmplify() async {
-    if (!_amplifyConfigured) {
-      try {
-        await AmplifyService.configureAmplify();
-        setState(() {
-          _amplifyConfigured = true;
-        });
-      } catch (e) {
-        debugPrint("Error during Amplify configuration: $e");
-      }
-    }
-  }
+  // Future<void> _configureAmplify() async {
+  //   if (!_amplifyConfigured) {
+  //     try {
+  //       await AmplifyService.configureAmplify();
+  //       setState(() {
+  //         _amplifyConfigured = true;
+  //       });
+  //     } catch (e) {
+  //       debugPrint("Error during Amplify configuration: $e");
+  //     }
+  //   }
+  // }
 
 
 
@@ -207,10 +208,18 @@ class _AwsQuestionScreenState extends State<AwsQuestionScreen> {
   String currentAnswer = 'Answer will appear here';
 
   void loadRandomQuestion() {
-    // Get AWS questions data
-    Map<Map, List> awsQuestions = AwsQuestionsAndAnswers.getQuestionsAndAnswers();
+    // Get questions data based on category
+    final String category = ModalRoute.of(context)?.settings.arguments as String? ?? 'Easy AWS';
+    Map<Map, List> questions;
+    
+    if (category == 'French AWS') {
+      questions = FrenchAwsQuestionsAndAnswers.getQuestionsAndAnswers();
+    } else {
+      questions = AwsQuestionsAndAnswers.getQuestionsAndAnswers();
+    }
+    
     var random = Random();
-    var questionEntry = awsQuestions.entries.elementAt(random.nextInt(awsQuestions.length));
+    var questionEntry = questions.entries.elementAt(random.nextInt(questions.length));
     var questionAndAnswer = questionEntry.key;
     
     setState(() {

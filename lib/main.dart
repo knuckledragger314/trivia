@@ -148,6 +148,7 @@
 import 'package:flutter/material.dart';
 import 'package:trivia/questions_and_answers.dart';
 import 'package:trivia/aws_questions_and_answers.dart';
+import 'package:trivia/french_aws_questions_and_answers.dart';
 import 'package:trivia/questions_screen.dart';
 import 'amplify_configuration.dart';
 
@@ -210,6 +211,7 @@ class TriviaCategoriesPage extends StatelessWidget {
   final List<String> categories = [
     ...QuestionsAndAnswers.getUniqueCategories(),
     ...AwsQuestionsAndAnswers.getUniqueCategories(),
+    ...FrenchAwsQuestionsAndAnswers.getUniqueCategories(),
   ];
 
 
@@ -239,7 +241,7 @@ class TriviaCategoriesPage extends StatelessWidget {
               onPressed: () {
               //  lambdaRequest([]);
                 // Navigate to appropriate screen based on category
-                if (categories[index] == 'Easy AWS') {
+                if (categories[index] == 'Easy AWS' || categories[index] == 'French AWS') {
                   Navigator.pushNamed(
                     context,
                     '/awsQuestionScreen',
