@@ -147,8 +147,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:trivia/questions_and_answers.dart';
-import 'package:trivia/aws_questions_and_answers.dart';
-import 'package:trivia/french_aws_questions_and_answers.dart';
+import 'package:trivia/aws_short_questions_and_answers.dart';
+import 'package:trivia/aws_long_questions_and_answers.dart';
 import 'package:trivia/questions_screen.dart';
 import 'amplify_configuration.dart';
 
@@ -195,12 +195,12 @@ class CategoryButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(8.0),
       ),
       child: Text(
         categoryName,
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18),
+        style: TextStyle(fontSize: 14),
       ),
     );
   }
@@ -241,7 +241,7 @@ class TriviaCategoriesPage extends StatelessWidget {
               onPressed: () {
               //  lambdaRequest([]);
                 // Navigate to appropriate screen based on category
-                if (categories[index] == 'Easy AWS' || categories[index] == 'French AWS') {
+                if (categories[index] == 'AWS Short' || categories[index] == 'AWS Long') {
                   Navigator.pushNamed(
                     context,
                     '/awsQuestionScreen',

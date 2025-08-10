@@ -24,11 +24,11 @@ Read the markdown files and convert content to Map structure similar to existing
 - Markdown content parsed and organized into Map structure like existing system
 - Data accessible programmatically for use in app
 
-## Milestone 3: Add "Easy AWS" Category ✅ COMPLETED
+## Milestone 3: Add "AWS Short" Category ✅ COMPLETED
 Create the new category and make it appear in the category selection grid.
 
 **Expected Outcome:**
-- "Easy AWS" category appears alongside existing categories
+- "AWS Short" category appears alongside existing categories
 - Category properly integrated into existing category system
 - Category selection works (even if it navigates to placeholder screen initially)
 
@@ -40,7 +40,7 @@ Create a simple blank screen that can navigate back and forth between question a
 - Ability to switch between "Question View" and "Answer View" modes
 - Back button navigation working properly
 - Simple placeholder content to verify navigation works
-- Route properly connected from "Easy AWS" category selection
+- Route properly connected from "AWS Short" category selection
 
 ## Milestone 5: UI Design and Content Integration ✅ COMPLETED
 Once basic navigation is working, figure out how to properly display the longer question content in the UI.
@@ -51,12 +51,12 @@ Once basic navigation is working, figure out how to properly display the longer 
 - Good user experience for longer content
 - Integration with actual markdown content
 
-## Milestone 6: Add French AWS Questions
+## Milestone 6: Add AWS Long Questions
 Add French language AWS questions as a new category alongside existing ones.
 
 **Expected Outcome:**
 - Create `french_aws_questions.md` and `french_aws_answers.md` files
 - Parse French questions into new Dart file similar to existing AWS questions
-- Add "French AWS" category to category selection
+- Add "AWS Long" category to category selection
 - French questions route to AWS question screen with proper content
-- Both English and French AWS categories work independently
+- Both English and AWS Long categories work independently

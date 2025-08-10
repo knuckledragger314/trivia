@@ -20,14 +20,14 @@
 - [x] Match questions with detailed answers and explanations
 - [x] Follow existing pattern from `questions_and_answers.dart`
 - [x] Add `getQuestionsAndAnswers()` and `getUniqueCategories()` methods
-- [x] Use 'Easy AWS' category for all questions
+- [x] Use 'AWS Short' category for all questions
 - [x] **FIX**: Include both "Correct!" and "Incorrect!" explanations in answers
 
-## Milestone 3: Add "Easy AWS" Category ✅ COMPLETED
+## Milestone 3: Add "AWS Short" Category ✅ COMPLETED
 
 - [x] Import AWS questions into main.dart
-- [x] Update category system to include Easy AWS alongside existing categories
-- [x] Verify "Easy AWS" category appears in selection grid
+- [x] Update category system to include AWS Short alongside existing categories
+- [x] Verify "AWS Short" category appears in selection grid
 - [x] Test category selection navigation works
 
 ## Milestone 4: Basic Navigation Screen ✅ COMPLETED
@@ -37,8 +37,8 @@
 - [x] Implement scrollable content area for long text
 - [x] Add "Load New Question" functionality
 - [x] Implement back navigation (built-in with AppBar)
-- [x] Add route `/awsQuestionScreen` for Easy AWS category
-- [x] Route "Easy AWS" to new screen, other categories to existing screen
+- [x] Add route `/awsQuestionScreen` for AWS Short category
+- [x] Route "AWS Short" to new screen, other categories to existing screen
 
 **Status**: Basic AWS question feature complete with navigation working and comprehensive answer explanations
 

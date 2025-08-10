@@ -3,8 +3,8 @@ import 'dart:math';
 //import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:flutter/material.dart';
 import 'package:trivia/questions_and_answers.dart';
-import 'package:trivia/aws_questions_and_answers.dart';
-import 'package:trivia/french_aws_questions_and_answers.dart';
+import 'package:trivia/aws_short_questions_and_answers.dart';
+import 'package:trivia/aws_long_questions_and_answers.dart';
 //import 'package:amplify_flutter/amplify_flutter.dart';
 import 'amplify_configuration.dart';
 
@@ -209,10 +209,10 @@ class _AwsQuestionScreenState extends State<AwsQuestionScreen> {
 
   void loadRandomQuestion() {
     // Get questions data based on category
-    final String category = ModalRoute.of(context)?.settings.arguments as String? ?? 'Easy AWS';
+    final String category = ModalRoute.of(context)?.settings.arguments as String? ?? 'AWS Short';
     Map<Map, List> questions;
     
-    if (category == 'French AWS') {
+    if (category == 'AWS Long') {
       questions = FrenchAwsQuestionsAndAnswers.getQuestionsAndAnswers();
     } else {
       questions = AwsQuestionsAndAnswers.getQuestionsAndAnswers();
@@ -237,7 +237,7 @@ class _AwsQuestionScreenState extends State<AwsQuestionScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final String category = ModalRoute.of(context)?.settings.arguments as String? ?? 'Easy AWS';
+    final String category = ModalRoute.of(context)?.settings.arguments as String? ?? 'AWS Short';
     
     return Scaffold(
       appBar: AppBar(
