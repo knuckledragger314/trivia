@@ -210,8 +210,8 @@ class CategoryButton extends StatelessWidget {
 class TriviaCategoriesPage extends StatelessWidget {
   final List<String> categories = [
     ...QuestionsAndAnswers.getUniqueCategories(),
-    ...AwsQuestionsAndAnswers.getUniqueCategories(),
-    ...FrenchAwsQuestionsAndAnswers.getUniqueCategories(),
+    ...AwsShortQuestionsAndAnswers.getUniqueCategories(),
+    ...AwsLongQuestionsAndAnswers.getUniqueCategories(),
   ];
 
 

@@ -1,4 +1,4 @@
-abstract class AwsQuestionsAndAnswers {
+abstract class AwsShortQuestionsAndAnswers {
   static Map<Map, List> getQuestionsAndAnswers() {
     var questionsAndAnswers = {
       {

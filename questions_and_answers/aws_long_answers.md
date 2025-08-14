@@ -394,17 +394,13 @@ c. Use AWS Global Accelerator - Incorrect! AWS Global Accelerator is a service t
 d. Use CloudFront distribution in front of the Application Load Balancer - Correct!
 e. Use AWS Direct Connect
 
-
-
-
-
-
 46. A healthcare startup needs to enforce compliance and regulatory guidelines for objects stored in Amazon S3. One of the key requirements is to provide adequate protection against accidental deletion of objects. As a solutions architect, what are your recommendations to address these guidelines? (Select two)
 a. Enable versioning on the bucket - Correct!
 b. Enable MFA delete on the bucket - Correct!
 c. Change the configuration on AWS S3 console so that the user needs to provide additional confirmation while deleting any S3 object
 d. Establish a process to get managerial approval for deleting S3 objects
 e. Create an event trigger on deleting any S3 object. The event invokes an SNS notification via email to the IT manager
+
 47. A financial services company recently launched an initiative to improve the security of its AWS resources and it had enabled AWS Shield Advanced across multiple AWS accounts owned by the company. Upon analysis, the company has found that the costs incurred are much higher than expected. Which of the following would you attribute as the underlying reason for the unexpectedly high costs for AWS Shield Advanced service?
 a. Consolidated billing has not been enabled. All the AWS accounts should fall under a single consolidated billing for the monthly fee to be charged only once - Correct! If your organization has multiple AWS accounts, then you can subscribe multiple AWS Accounts to AWS Shield Advanced by individually enabling it on each account using the AWS Management Console or API. You will pay the monthly fee once as long as the AWS accounts are all under a single consolidated billing, and you own all the AWS accounts and resources in those accounts.
 b. Savings Plans has not been enabled for the AWS Shield Advanced service across all the AWS accounts
@@ -424,13 +420,6 @@ c. By default, Lambda functions always operate from an AWS-owned VPC and hence h
 d. Since Lambda functions can scale extremely quickly, its a good idea to deploy a CloudWatch Alarm that notifies your team when function metrics such as ConcurrentExecutions or Invocations exceeds the expected threshold - Correct! Since Lambda functions can scale extremely quickly, this means you should have controls in place to notify you when you have a spike in concurrency.
 e. Lambda allocates compute power in proportion to the memory you allocate to your function. AWS, thus recommends to over provision your function time out settings for the proper performance of Lambda functions - Incorrect! Lambda allocates compute power in proportion to the memory you allocate to your function. This means you can over-provision memory to run your functions faster and potentially reduce your costs. However, AWS recommends that you should not over provision your function time out settings.
 f. If you intend to reuse code in more than one Lambda function, you should consider creating a Lambda Layer for the reusable code - Correct! You can configure your Lambda function to pull in additional code and content in the form of layers. A layer is a ZIP archive that contains libraries, a custom runtime, or other dependencies. With layers, you can use libraries in your function without needing to include them in your deployment package. Layers let you keep your deployment package small, which makes development easier. A function can use up to 5 layers at a time.
-
-
-
-
-
-
-
 
 50. A cyber security company is running a mission critical application using a single Spread placement group of EC2 instances. The company needs 15 Amazon EC2 instances for optimal performance. How many Availability Zones (AZs) will the company need to deploy these EC2 instances per the given use-case?
 a. 3 - Correct! A spread placement group can span multiple Availability Zones in the same Region. You can have a maximum of seven running instances per Availability Zone per group. Therefore, to deploy 15 EC2 instances in a single Spread placement group, the company needs to use 3 AZs.

@@ -213,9 +213,9 @@ class _AwsQuestionScreenState extends State<AwsQuestionScreen> {
     Map<Map, List> questions;
     
     if (category == 'AWS Long') {
-      questions = FrenchAwsQuestionsAndAnswers.getQuestionsAndAnswers();
+      questions = AwsLongQuestionsAndAnswers.getQuestionsAndAnswers();
     } else {
-      questions = AwsQuestionsAndAnswers.getQuestionsAndAnswers();
+      questions = AwsShortQuestionsAndAnswers.getQuestionsAndAnswers();
     }
     
     var random = Random();

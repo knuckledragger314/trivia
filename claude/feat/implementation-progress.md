@@ -1,49 +1,94 @@
-# Implementation Progress
+# Implementation Progress: Add Famous People and International Cities Question Categories
 
-## Milestone 1: Directory and File Setup ✅ COMPLETED
+## Progress Overview
+This document tracks the completion of milestones for adding famous people and international cities question categories to the Flutter trivia app.
 
-- [x] Create `questions_and_answers/` directory
-- [x] Create empty `easy_aws_questions.md` file  
-- [x] Create empty `easy_aws_answers.md` file
+## Milestone Status
 
-## Milestone 1a: Edit Markdown Files ✅ COMPLETED
+###  Milestone 1: Famous People Category - Initial Question Set
+**Status**: COMPLETED  
+**Completion Date**: Current
 
-- [x] Remove topic headers ("IAM Quiz", "EC2 Quiz", etc.) from both files
-- [x] Renumber all questions sequentially 1-128
-- [x] Add letter labels (a, b, c, d) to multiple choice options
-- [x] Clean up formatting while preserving all content
+**Completed Tasks**:
+- [x] Added initial set of 10 famous people questions covering various historical figures, artists, scientists, and notable personalities
+- [x] Questions integrated into existing questions_and_answers.dart structure
+- [x] Category automatically appears in app's category selection grid
+- [x] Questions follow same format as existing trivia questions
 
-## Milestone 2: Data Parsing and Map Creation ✅ COMPLETED
+**Questions Added (First 10)**:
+- Leonardo da Vinci (Mona Lisa)
+- Albert Einstein (theory of relativity)
+- Neil Armstrong (first moon landing)
+- William Shakespeare (Romeo and Juliet)
+- Antonio Vivaldi (The Four Seasons)
+- Martin Luther King Jr. (I Have a Dream speech)
+- Alexander Graham Bell (telephone)
+- Vincent van Gogh (cut off ear)
+- Margaret Thatcher (first female UK PM)
+- Thomas Edison (light bulb)
 
-- [x] Create new Dart file `/lib/aws_questions_and_answers.dart`
-- [x] Parse all 128 questions from markdown files into Map structure
-- [x] Match questions with detailed answers and explanations
-- [x] Follow existing pattern from `questions_and_answers.dart`
-- [x] Add `getQuestionsAndAnswers()` and `getUniqueCategories()` methods
-- [x] Use 'AWS Short' category for all questions
-- [x] **FIX**: Include both "Correct!" and "Incorrect!" explanations in answers
+###  Milestone 2: Famous People Category - Question Expansion
+**Status**: COMPLETED  
+**Completion Date**: Current
 
-## Milestone 3: Add "AWS Short" Category ✅ COMPLETED
+**Completed Tasks**:
+- [x] Expanded famous people questions to 75 total questions
+- [x] Added international figures (Churchill, Mandela, Gandhi, etc.)
+- [x] Added historical leaders (Genghis Khan, Napoleon, kings)
+- [x] Added comprehensive coverage of American presidents (17 questions)
+- [x] Added scientists, artists, authors, athletes, and other notable figures
+- [x] Ensured variety across different time periods and cultures
 
-- [x] Import AWS questions into main.dart
-- [x] Update category system to include AWS Short alongside existing categories
-- [x] Verify "AWS Short" category appears in selection grid
-- [x] Test category selection navigation works
+**Final Question Count**: 75 famous people questions total
+- Original questions: 3
+- First expansion: 10 questions
+- Second expansion: 10 questions  
+- Third expansion: 25 questions
+- Final expansion: 17 American presidents
+- **Total**: 75 questions
 
-## Milestone 4: Basic Navigation Screen ✅ COMPLETED
+### ✅ Milestone 3: International Cities Category - Implementation
+**Status**: COMPLETED
+**Completion Date**: Current
 
-- [x] Create new `AwsQuestionScreen` component with question/answer toggle
-- [x] Add Question/Answer view toggle buttons
-- [x] Implement scrollable content area for long text
-- [x] Add "Load New Question" functionality
-- [x] Implement back navigation (built-in with AppBar)
-- [x] Add route `/awsQuestionScreen` for AWS Short category
-- [x] Route "AWS Short" to new screen, other categories to existing screen
+**Completed Tasks**:
+- [x] Created international cities question category
+- [x] Added 20 questions about world capitals and famous cities
+- [x] Integrated with existing app structure
+- [x] Category automatically appears in app's category selection grid
+- [x] Questions follow same format as existing trivia questions
 
-**Status**: Basic AWS question feature complete with navigation working and comprehensive answer explanations
+**Questions Added (20 total)**:
+**Famous Cities Format ("What country is [city] in?"):**
+- Doha → Qatar
+- Stockholm → Sweden
+- Prague → Czech Republic
+- Vienna → Austria
+- Mumbai → India
+- Barcelona → Spain
+- Zurich → Switzerland
+- Melbourne → Australia
+- Dubai → United Arab Emirates
+- Istanbul → Turkey
 
-## Milestone 5: UI Design and Content Integration
-- [ ] Design layout for long questions
-- [ ] Format answer explanations
-- [ ] Integrate with markdown content
-- [ ] Optimize user experience
+**World Capitals Format ("What is the capital of [country]?"):**
+- Portugal → Lisbon
+- Kenya → Nairobi
+- Thailand → Bangkok
+- Chile → Santiago
+- Morocco → Rabat
+- Indonesia → Jakarta
+- Nigeria → Abuja
+- Egypt → Cairo
+- South Korea → Seoul
+- Argentina → Buenos Aires
+
+### � Milestone 4: Testing and Validation
+**Status**: PENDING
+
+**Planned Tasks**:
+- [ ] Verify famous people category functions correctly
+- [ ] Verify international cities category functions correctly
+- [ ] Test question randomization within categories
+- [ ] Validate question-answer accuracy
+- [ ] Ensure seamless integration with existing app flow
